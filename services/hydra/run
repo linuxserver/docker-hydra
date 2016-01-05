@@ -1,2 +1,3 @@
 #!/bin/bash
-/sbin/setuser abc python /config/hydra/nzbhydra.py --nobrowser
+cd /config/hydra
+/sbin/setuser abc python nzbhydra.py --nobrowser
