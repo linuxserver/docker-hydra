@@ -1,6 +1,6 @@
 #!/bin/bash
 
-[[ ! -d /app/hydra/.git ]] && git clone https://github.com/theotherp/nzbhydra /app/hydra
-cd /app/hydra
+[[ ! -d /config/hydra/.git ]] && git clone https://github.com/theotherp/nzbhydra /config/hydra
+cd /config/hydra
 git pull
-chown -R abc:abc /config /app
+chown -R abc:abc /config
