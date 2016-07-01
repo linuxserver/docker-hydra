@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/with-contenv bash
 
 [[ ! -d /config/hydra/.git ]] && (git clone https://github.com/theotherp/nzbhydra /config/hydra && chown -R abc:abc /config)
 

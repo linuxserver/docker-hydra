@@ -9,21 +9,24 @@ NZBHydra is a meta search for NZB indexers and the "spiritual successor" to NZBm
 ## Usage
 
 ```
-docker create --name=hydra -v /etc/localtime:/etc/localtime:ro  \
--v <path to data>:/config -v <nzb download>:/downloads \
--e PGID=<gid> -e PUID=<uid> -p 5075:5075 linuxserver/hydra
+docker create --name=hydra \
+-v <path to data>:/config \
+-v <nzb download>:/downloads \
+-e PGID=<gid> -e PUID=<uid> \
+-e TZ=<timezone> \
+-p 5075:5075 linuxserver/hydra
 ```
 
 **Parameters**
 
 * `-p 5075` - the port(s)
-* `-v /etc/localtime` for timesync - *optional*
 * `-v /config` - Where hydra should store config files
 * `-v /downloads` - NZB download folder
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
+* `-e TZ` for timezone EG. Europe/London
 
-It is based on phusion-baseimage with ssh removed, for shell access whilst the container is running do `docker exec -it hydra /bin/bash`.
+It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it hydra /bin/bash`.
 
 ### User / Group Identifiers
 
@@ -45,6 +48,7 @@ The web interface is at `<your ip>:5075` , to set up indexers and connections to
 
 ## Versions
 
-+ **25.01.2016:** Initial Release. 
++ **01.07.16:** Rebase to alpine linux for smaller image.
++ **25.01.16:** Initial Release. 
 
 
