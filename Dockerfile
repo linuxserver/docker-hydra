@@ -1,12 +1,13 @@
-FROM linuxserver/baseimage.python
+FROM lsiobase/alpine.python
+MAINTAINER sparklyballs
 
-MAINTAINER Sparklyballs <sparklyballs@linuxserver.io>
+# set python to use utf-8 rather than ascii
+ENV PYTHONIOENCODING="UTF-8"
 
-# Adding Custom files
-ADD init/ /etc/my_init.d/
-ADD services/ /etc/service/
-RUN chmod -v +x /etc/service/*/run /etc/my_init.d/*.sh
+# copy local files
+COPY root/ /
 
-# Volumes and Ports
-VOLUME /config /downloads
+# ports and volumes
 EXPOSE 5075
+WORKDIR /config/hydra
+VOLUME /config /downloads
