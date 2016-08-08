@@ -1,0 +1,9 @@
+#!/usr/bin/with-contenv bash
+
+# install app
+[[ ! -d /config/hydra/.git ]] && \
+	git clone https://github.com/theotherp/nzbhydra /config/hydra
+
+# permissions
+chown -R abc:abc \
+	/config
