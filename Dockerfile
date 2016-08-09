@@ -9,5 +9,5 @@ COPY root/ /
 
 # ports and volumes
 EXPOSE 5075
-WORKDIR /config/hydra
+# WORKDIR /config/hydra
 VOLUME /config /downloads

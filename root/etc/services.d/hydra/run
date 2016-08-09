@@ -1,5 +1,7 @@
 #!/usr/bin/with-contenv bash
 
+cd /config/hydra
+
 exec \
 	s6-setuidgid abc python /config/hydra/nzbhydra.py \
 	--nobrowser
