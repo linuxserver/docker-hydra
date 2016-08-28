@@ -8,7 +8,7 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 # linuxserver/hydra
 [![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/hydra.svg)][hub]
 [![Docker Stars](https://img.shields.io/docker/stars/linuxserver/hydra.svg)][hub]
-[![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-hydra)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-hydra/)
+[![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-nzbhydra)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-nzbhydra/)
 [hub]: https://hub.docker.com/r/linuxserver/hydra/
 
 NZBHydra is a meta search for NZB indexers and the "spiritual successor" to NZBmegasearcH. It provides easy access to a number of raw and newznab based indexers. [hydra](https://github.com/theotherp/nzbhydra)
