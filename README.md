@@ -6,8 +6,15 @@ The [LinuxServer.io](https://linuxserver.io) team brings you another container r
 * [Podcast](https://www.linuxserver.io/index.php/category/podcast/) covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # linuxserver/hydra
+[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/hydra.svg)][hub]
+[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/hydra.svg)][hub]
+[![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-hydra)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-hydra/)
+[hub]: https://hub.docker.com/r/linuxserver/hydra/
 
 NZBHydra is a meta search for NZB indexers and the "spiritual successor" to NZBmegasearcH. It provides easy access to a number of raw and newznab based indexers. [hydra](https://github.com/theotherp/nzbhydra)
+
+[![hydra](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/hydra-icon.png)][hydraurl]
+[hydraurl]: https://github.com/theotherp/nzbhydra
 
 ## Usage
 
@@ -54,5 +61,6 @@ The web interface is at `<your ip>:5075` , to set up indexers and connections to
 
 ## Versions
 
++ **28.08.16:** Add badges to README.
 + **08.08.16:** Rebase to alpine linux.
 + **25.01.16:** Initial Release.
