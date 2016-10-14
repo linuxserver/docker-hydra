@@ -11,7 +11,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # linuxserver/hydra
-[![](https://images.microbadger.com/badges/image/linuxserver/hydra.svg)](http://microbadger.com/images/linuxserver/hydra "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/hydra.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/hydra.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-nzbhydra)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-nzbhydra/)
+[![](https://images.microbadger.com/badges/version/linuxserver/hydra.svg)](https://microbadger.com/images/linuxserver/hydra "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/hydra.svg)](http://microbadger.com/images/linuxserver/hydra "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/hydra.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/hydra.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io/linuxserver-nzbhydra)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io/job/linuxserver-nzbhydra/)
 [hub]: https://hub.docker.com/r/linuxserver/hydra/
 
 NZBHydra is a meta search for NZB indexers and the "spiritual successor" to NZBmegasearcH. It provides easy access to a number of raw and newznab based indexers. [hydra](https://github.com/theotherp/nzbhydra)
@@ -61,8 +61,17 @@ The web interface is at `<your ip>:5075` , to set up indexers and connections to
 
 * To monitor the logs of the container in realtime `docker logs -f hydra`.
 
+* container version number 
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' hydra`
+
+* image version number
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/hydra`
+
 ## Versions
 
++ **14-10-16:** Add version layer information.
 + **09.09.16:** Add layer badges to README.
 + **28.08.16:** Add badges to README.
 + **08.08.16:** Rebase to alpine linux.
