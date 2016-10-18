@@ -77,7 +77,7 @@ The web interface is at `<your ip>:5075` , to set up indexers and connections to
 
 ## Versions
 
-+ **14-10-16:** Add version layer information.
++ **14.10.16:** Add version layer information.
 + **09.09.16:** Add layer badges to README.
 + **28.08.16:** Add badges to README.
 + **08.08.16:** Rebase to alpine linux.
