@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bash
 
-cd /config/hydra
+cd /config/hydra || exit
 
 exec \
 	s6-setuidgid abc python /config/hydra/nzbhydra.py \
