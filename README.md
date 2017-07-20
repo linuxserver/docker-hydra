@@ -77,6 +77,7 @@ The web interface is at `<your ip>:5075` , to set up indexers and connections to
 
 ## Versions
 
++ **20.07.17:** Internal git pull instead of at runtime.
 + **25.05.17:** Rebase to alpine 3.6. 
 + **07.11.16:** Move git clone internal to the container, 
 point config, database and log to use same locations for existing users.
