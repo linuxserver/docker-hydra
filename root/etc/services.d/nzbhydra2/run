@@ -1,0 +1,7 @@
+#!/usr/bin/with-contenv bash
+
+cd /app/hydra2 || exit
+
+exec \
+	s6-setuidgid abc ./nzbhydra2 --nobrowser --pidfile /var/run/nzbhydra2/nzbhydra2.pid \
+	--host 0.0.0.0 --port  5075 --datafolder /config

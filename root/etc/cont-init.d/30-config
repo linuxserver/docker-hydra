@@ -1,10 +1,6 @@
 #!/usr/bin/with-contenv bash
 
-# make our folders
-mkdir -p \
-	/config/hydra
+mkdir -p /var/run/nzbhydra2
 
-# permissions
-chown -R abc:abc \
-	/config \
-	/app/hydra
+
+chown -R abc:abc /config /var/run/nzbhydra2

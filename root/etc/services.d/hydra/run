@@ -1,9 +1,0 @@
-#!/usr/bin/with-contenv bash
-
-cd /config/hydra || exit
-
-exec \
-	s6-setuidgid abc python /app/hydra/nzbhydra.py \
-	--nobrowser --config /config/hydra/settings.cfg \
-	--database /config/hydra/nzbhydra.db \
-	--logfile /config/hydra/nzbhydra.log
