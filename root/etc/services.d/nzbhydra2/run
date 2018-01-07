@@ -3,5 +3,7 @@
 cd /app/hydra2 || exit
 
 exec \
-	s6-setuidgid abc ./nzbhydra2 --nobrowser --pidfile /var/run/nzbhydra2/nzbhydra2.pid \
-	--host 0.0.0.0 --port  5075 --datafolder /config
+	s6-setuidgid abc \
+	java -Xmx128M -DfromWrapper -XX:TieredStopAtLevel=1 -noverify \
+	-Dspring.output.ansi.enabled=ALWAYS -jar /app/hydra2/lib/core-exec.jar help \
+	--nobrowser --port  5075 --datafolder /config

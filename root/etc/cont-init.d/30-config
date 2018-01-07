@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bash
 
-mkdir -p /var/run/nzbhydra2
+mkdir -p /config/logs
 
 
-chown -R abc:abc /config /var/run/nzbhydra2
+chown -R abc:abc /config
