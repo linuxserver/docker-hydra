@@ -1,5 +1,7 @@
 #!/usr/bin/with-contenv bash
 
+chmod +x /app/hydra2/nzbhydra2
+
 mkdir -p /config/logs
 
 
