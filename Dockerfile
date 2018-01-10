@@ -11,6 +11,7 @@ RUN \
  apk add --no-cache \
 	curl \
 	openjdk8-jre\
+	python \
 	unzip && \
  echo "**** install hydra2 ****" && \
  HYDRA_VER=$(curl -sX GET "https://api.github.com/repos/theotherp/nzbhydra2/releases/latest" \
