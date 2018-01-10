@@ -1,6 +1,7 @@
 #!/usr/bin/with-contenv bash
 
 cd /app/hydra2 || exit
+unset HOST_OS
 
 exec \
 	s6-setuidgid abc /usr/bin/python nzbhydra2wrapper.py \
