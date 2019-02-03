@@ -32,7 +32,7 @@ docker create --name=hydra \
 
 ## Parameters
 
-`The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side. 
+`The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side.
 For example with a port -p external:internal - what this shows is the port mapping from internal to external of the container.
 So -p 8080:80 would expose port 80 from inside the container to be accessible from the host's IP on port 8080
 http://192.168.x.x:8080 would show you what's running INSIDE the container on port 80.`
@@ -58,7 +58,7 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
     uid=1001(dockeruser) gid=1001(dockergroup) groups=1001(dockergroup)
 ```
 
-## Setting up the application 
+## Setting up the application
 
 The web interface is at `<your ip>:5075` , to set up indexers and connections to your nzb download applications.
 
@@ -67,7 +67,7 @@ The web interface is at `<your ip>:5075` , to set up indexers and connections to
 
 * To monitor the logs of the container in realtime `docker logs -f hydra`.
 
-* container version number 
+* container version number
 
 `docker inspect -f '{{ index .Config.Labels "build_version" }}' hydra`
 
@@ -78,10 +78,10 @@ The web interface is at `<your ip>:5075` , to set up indexers and connections to
 ## Versions
 
 + **17.08.18:** Rebase to alpine 3.8.
-+ **12.12.17:** Rebase to alpine 3.7. 
++ **12.12.17:** Rebase to alpine 3.7.
 + **20.07.17:** Internal git pull instead of at runtime.
-+ **25.05.17:** Rebase to alpine 3.6. 
-+ **07.11.16:** Move git clone internal to the container, 
++ **25.05.17:** Rebase to alpine 3.6.
++ **07.11.16:** Move git clone internal to the container,
 point config, database and log to use same locations for existing users.
 + **14.10.16:** Add version layer information.
 + **09.09.16:** Add layer badges to README.
