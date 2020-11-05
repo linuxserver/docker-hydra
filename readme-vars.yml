@@ -45,10 +45,15 @@ optional_block_1: false
 # application setup block
 app_setup_block_enabled: true
 app_setup_block: |
+  THIS IMAGE HAS BEEN DEPRECATED.
+
+  Please use [linuxserver/nzbhydra2](https://github.com/linuxserver/docker-nzbhydra2) instead.
+
   The web interface is at `<your ip>:5075` , to set up indexers and connections to your nzb download applications.
 
 # changelog
 changelogs:
+  - { date: "04.11.19:", desc: "Deprecated. Please use [linuxserver/nzbhydra2](https://github.com/linuxserver/docker-nzbhydra2) instead." }
   - { date: "19.12.19:", desc: "Rebasing to alpine 3.11." }
   - { date: "28.06.19:", desc: "Rebasing to alpine 3.10." }
   - { date: "23.03.19:", desc: "Switching to new Base images, shift to arm32v7 tag." }
